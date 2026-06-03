@@ -16,8 +16,6 @@
     width: 40%;
     gap: 500px;
 }
-.box1{
-}
 .box2{
     background-image: url(./media/sqi-image.png);
     background-size: contain;
@@ -43,5 +41,5 @@ button{
     border-radius: 10px;
     border: none;
     font-weight: bold;
-    font-family:  "Poppins", sans-serif
+    font-family: "Poppins", sans-serif
 }
