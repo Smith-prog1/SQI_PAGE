@@ -4,42 +4,215 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    box-shadow: 0px 0.2px 0.15px 0.2px;
+    border: 1px solid #F2F1EE;
+}
+nav{
+    width: 70%;
+    min-height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 75px;
+}
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #081F89;
+    font-weight: 600;
+    font-size: 14px;
 }
 .hero-section{
+    min-height: 50dvh;
+    background-image: linear-gradient(to right,white, #FFFDF3);
+}
+.parent-div{
+    width: 70%;
     display: flex;
-    height: 70dvh;
-    margin: 50px auto;
-    background-color: #FFFEF7;
-    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
 }
-.box{
-    width: 40%;
-    gap: 500px;
+section .parent-div div{
+    margin-top: 50px;
 }
-.box2{
-    background-image: url(./media/sqi-image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.img{
+    height: 500px;
 }
-h1{
-    font-size: 50px;
-    font-family: "Poppins", sans-serif;
-    line-height: 60px;
+.hero-section .parent-div div h1{
     font-size: 60px;
-    margin-top: 60px;
+    line-height: 65px;
     color: #000E42;
 }
-p{
-    margin-top: 15px;
-    color: #7A6651;
+.hero-section .parent-div div p{
+    margin-top: 10px;
+    color: #5E676F;
 }
-button{
-    margin-top: 50px;
+.hero-section .parent-div div button{
+    padding: 17px 30px;
+    border-radius: 12px;
+    border: none;
     background-color: #00208A;
     color: white;
-    padding: 20px 25px;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif
+    font-weight: 500px;
+    margin-top: 40px;
+}
+.start{
+    width: 70%;
+    margin: 50px auto;
+    font-size: 40px;
+    font-weight: 600;
+    color: #050754;
+}
+.program{
+    width: 70%;
+    margin: auto;
+    min-height: 50dvh;
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-between; */
+}
+.card{
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: column; */
+    width: 310px;
+}
+.card img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+.card h1{
+    font-size: 20px;
+    color: #050754;
+    margin-top: 20px;
+}
+.card p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #5D697B;
+    margin-top: 20px;
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 50px;
+    width: 100px;
+    color: #34395A;
+    text-decoration: none;
+    border-bottom: 2px solid #5D697B;
+    padding-bottom: 5px;
+    align-self: start;
+}
+
+.details{
+    width: 70%;
+    display: flex;
+    margin: 50px auto;
+    gap: 50px;
+}
+.box{
+    width: 310px;
+    font-size: 16px;
+}
+.box h3{
+    margin-bottom: 20px;
+}
+.box p{
+    padding: 10px 0;
+    border-bottom: 1px solid #97D1F9;
+    color: #696A69;
+}
+.courses{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    border: 1px solid green;
+}
+.our{
+    font-size: 50px;
+}
+.take{
+    font-size: 15px;
+}
+.view{
+    font-size: 13px;
+    display: inline-block;
+    color: #00258E;
+    font-weight: 600;
+    padding-top: 30px;
+}
+.courses{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    
+}
+.parent{
+    margin-top: 50px;
+    background-color: #D5E9F2;
+    border-radius: 15px;
+    width: 500px;
+}
+.child{
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+.child img{
+    width: 100%;
+    border-radius: 15px;
+}
+.child h2{
+    padding-top: 10px;
+}
+.child .softs{
+    padding-top: 10px;
+}
+.child a{
+    display: inline-block;
+    padding-top: 10px;
+    font-weight: 600;
+}
+span{
+    color:#FF6600;
+}
+.parent2{
+    background-color: #EEEFBD;
+    border-radius: 15px;
+    width: 500px;
+}
+.child2{
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.child2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.parent3{
+    background-color: #E0D5C0;
+    border-radius: 15px;
+    width: 500px;
+}
+.child3{
+    width: 70%;
+    margin: 50px auto;
+    padding: 50px 0;
+}
+
+.child3 img{
+    width: 100%;
+    border-radius: 15px;
 }
