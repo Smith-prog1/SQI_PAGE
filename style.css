@@ -197,6 +197,23 @@ section .parent-div div{
     margin-top: 20px;
     border: 1px solid;
 }
+.our{
+    width: 70%;
+    margin: auto;
+    color: #56483D;
+    margin-top: 150px~;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 60%;
+    margin: 50px auto;
+}
+.grid div img{
+    width: 70%;
+}
 .prog{
     min-height: 40dvh;
     border: 1px solid green;
