@@ -201,7 +201,7 @@ section .parent-div div{
     width: 70%;
     margin: auto;
     color: #56483D;
-    margin-top: 150px~;
+    margin-top: 150px;
 }
 .grid{
     display: grid;
