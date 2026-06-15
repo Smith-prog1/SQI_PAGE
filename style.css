@@ -7,8 +7,13 @@
     font-family: "Poppins", sans-serif;
 }
 header{
+    width: 100%;
     box-shadow: 0px 0.2px 0.15px 0.2px;
     border: 1px solid #F2F1EE;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    top: 0;
 }
 nav{
     width: 70%;
@@ -17,6 +22,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.fa-angle-down{
+    margin-left: 5px;
+    font-size: 12px;
 }
 .logo{
     height: 75px;
@@ -34,6 +43,7 @@ nav{
 }
 .hero-section{
     min-height: 50dvh;
+    margin-top: 100px;
     background-image: linear-gradient(to right,white, #FFFDF3);
 }
 .parent-div{
@@ -226,13 +236,16 @@ section .parent-div div{
 .inner-div{
     width: 70%;
     display: flex;
-    gap: 50px;
     margin: 50px auto;
+    justify-content: center;
+    gap: 50px;
+
     /* border: 1px solid red; */
 }
 .prog>div img{
     width: 100%;
     border-radius: 20px;
+    margin-top: 20px;
 }
 .text h1{
     color: white;
@@ -249,4 +262,333 @@ section .parent-div div{
     color: white;
     font-weight: 600;
     margin-top: 30px;
+}
+.with{
+    color: orange;
+}
+.test h1{
+    font-size:50px;
+    color: rgb(40, 30, 30);
+    margin-left: 300px;
+    margin-top: 40px;
+}
+.test p{
+    margin-left: 270px;
+}
+
+.review{
+    display: flex;
+    width: 65%;
+    margin: 50px auto;
+    /* border: 1px solid; */
+    gap: 20px;
+    height: 30dvh;
+}
+.first{
+    text-align: center;
+    width: 20%;
+}
+.first .sqi{
+    font-size: 13px;
+    font-weight: 600;
+}
+.rating{
+    color: orange;
+    font-weight: 600;
+}
+
+.based{
+    font-size: 13px;
+}
+.powered{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+}
+.G{
+    color: blue;
+    font-weight: bold;
+}
+.oo{
+    color: red;
+    font-weight: bold;
+}
+.o{
+    color: orange;
+    font-weight: bold;
+}
+.g{
+    color: blue;
+    font-weight: bold;
+}
+.l{
+    color: green;
+    font-weight: bold;
+}
+.e{
+    color: red;
+    font-weight: bold;
+}
+.first img{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+.first button{
+    background-color: rgb(72, 95, 184);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+.stars{
+    color: orange;
+    position: sticky;
+    width: 100%;
+    top: 1;
+}
+.omolimag img{
+    width: 50px;
+    height: 50px;
+}
+.second{
+    width: 80%;
+    /* border: 1px solid; */
+    margin-left: 60px;
+}
+
+.header>div{
+    display: flex;
+    gap: 10px;
+}
+.header img{
+    width: 60px;
+}
+.fa-star{
+    color: orange;
+}
+.header a{
+    text-decoration: none;
+}
+.header p{
+    color: grey;
+}
+.second{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 30px;
+}
+.one{
+    min-width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #FAFAFA;
+}
+.two{
+    min-width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #FAFAFA;
+
+}
+.three{
+    min-width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #FAFAFA;
+}
+.four{
+    min-width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #FAFAFA;
+}
+.five{
+    min-width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #FAFAFA;
+}
+.why-study{
+    width: 72%;
+    height: 135dvh;
+    margin-top: 100px;
+    margin: auto;
+    /* border: 1px solid; */
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+.why-study div h2{
+    font-size: 35px;
+    color: #333333;
+}
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.fa-atom{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.cardss h5{
+    color: #534941;
+    font-size: 20px;
+}
+.cardss p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #747374;
+}
+.fa-book-open-reader{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.fa-water{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.fa-readme{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.fa-award{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.fa-comments{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.fa-briefcase{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.fa-book{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #666666;
+}
+.laptop{
+    border: 1px solid;
+    height: 135dvh;
+    background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/conference_image_15.jpg);
+    background-size: cover;
+    background-position: right;
+    border: none;
+}
+.FAQ{
+    height: 80dvh;
+    width: 100%;
+    background-color: #090326;
+    margin-top: 50px;
+}
+.main-FAQ{
+    width: 72%;
+    margin: 0px auto;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-FAQ>div h2{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.freq{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.contact {
+    color: #D0A73F;
+    font-size: 20px
+}
+.line{
+    border: none;
+    height: 2px;
+    background-color: #D0A73F;
+    width: 120px;
+    margin-top: 5px;
+}
+.how{
+    color: #D39B00;
+    font-weight: 500;
+    font-size: 20px;   
+}
+.how1{
+    margin-top: 5px;
+}
+.we{
+    display: inline-block;
+    padding-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+.lines3{
+    border: none;
+    height: 2px;
+    background-color: #D39B00;
+    margin-top: 15px;
+}
+.how2{
+    margin-top: 40px;
+}
+.will{
+    margin-top: 40px;
+}
+.time{
+    width: 100%;
+    height: 70dvh;
+    background-color: #000B3F;
+}
+.main-time{
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 70px;
+    color: white;
+}
+.its{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.main-time h1{
+    font-size: 60px;
+}
+.we{
+    margin-bottom: 20px;
+}
+.join{
+    font-size: 15px;
+    font-weight: 600;
+}
+.lagos{
+    font-size: 15px;
+    font-weight: 600;
+}
+.main-time button{
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    background-color: #00208A;
+    color: white;
+    font-weight: 600;
 }
