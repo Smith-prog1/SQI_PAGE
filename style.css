@@ -185,10 +185,6 @@ section .parent-div div{
     padding: 50px;
     margin-top: 70px;
 }
-.container-se-inner{
-    /* width: 70%; */
-    /* margin: auto; */
-}
 .container-se-inner>img{
     width: 100%;
     border-radius: 10px;
@@ -485,7 +481,7 @@ section .parent-div div{
 }
 .laptop{
     border: 1px solid;
-    height: 135dvh;
+    height: 105dvh;
     background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/conference_image_15.jpg);
     background-size: cover;
     background-position: right;
@@ -495,7 +491,7 @@ section .parent-div div{
     height: 80dvh;
     width: 100%;
     background-color: #090326;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .main-FAQ{
     width: 72%;
