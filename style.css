@@ -588,3 +588,97 @@ section .parent-div div{
     color: white;
     font-weight: 600;
 }
+.head-news{
+    background-color: #F0F1FF;
+    /* margin-bottom: 50px; */
+}
+.news{
+    min-height: 50dvh;
+    width: 72%;
+    /* border: 1px solid; */
+    margin: 0px auto;
+}
+.header-news{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.main-news{
+    display: flex;
+    justify-content: space-between;
+}
+.header-news h2{
+    font-size: 40px;
+}
+.header-news button{
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #00208A;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+.contain{
+    width: 32%;
+    background-color: white;
+    margin-bottom: 150px;
+    box-shadow: 15px 15px 20px 20px #DCDEEC;
+    /* border: 1px solid yellow; */
+}
+.contain1{
+    height: 570px;
+}
+.imagee1{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid blue; */
+    background-image: url(https://sqi.edu.ng/wp-content/uploads/2026/02/SQI1816.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.contain .college{
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.jun{
+    color: #F89193;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.dream{
+    color: #6E6F71;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.bd{
+    width: 90%;
+    min-height: 50dvh;
+    /* border: 1px solid; */
+    margin: 0px auto;
+}
+.imagee2{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://sqi.edu.ng/wp-content/uploads/2026/02/IMG-20250712-WA0024.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.contain2{
+    height: 570px;
+}
+.imagee3{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://sqi.edu.ng/wp-content/uploads/2025/11/SQI4348-convocation.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+.contain3{
+    height: 550px;
+}
