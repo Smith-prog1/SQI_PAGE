@@ -6,6 +6,27 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.whatsapp{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 650px;
+    left: 50px;
+}
+.whatsapp img{
+    height: 60px;
+}
+.whatsapp p{
+    font-size: 10px;
+}
+.parag{
+    background-color: whitesmoke;
+    padding: 4px 4px;
+}
+.parag span{
+    font-weight: bold;
+    color: rgb(54, 54, 68);
+}
 header{
     width: 100%;
     box-shadow: 0px 0.2px 0.15px 0.2px;
@@ -41,6 +62,91 @@ nav{
     font-weight: 600;
     font-size: 14px;
 }
+.link-1{
+    position: relative;
+}
+.dropdown{
+    width: 250px;
+    min-height: 0px;
+    background-color: white;
+    position: absolute;
+    top: 52px;
+    z-index: 10;
+    border-top: 4px solid blue;
+    box-shadow: 0.1px 0.1px 0.3px 0.2px;
+    opacity: 0;
+    transition-duration: 1s;
+    display: grid;
+    place-content: center;
+    animation-timing-function: ease;
+}
+.ours{
+    width: 150px;
+    height: 0px;
+    transition: all 0.6s;
+    padding: 15px 5px;
+    opacity: 0;
+    display: none;
+    transition-timing-function: ease;
+}
+.ours:hover{
+    background-color: rgb(208, 201, 201);
+}
+.link-1:hover .dropdown-1{
+    opacity: 1;
+    min-height: 50px;
+    z-index: 20;
+}
+.link-1:hover .dropdown-1 .ours{
+    opacity: 1;
+    min-height: 50px;
+    display: block;
+}
+.dropdown-2{
+    top: 80px;
+}
+.link-2:hover .dropdown-2{
+    opacity: 1;
+    min-height: 50px;
+    z-index: 20;
+}
+.link-2:hover .dropdown-2 .ours{
+    opacity: 1;
+    min-height: 50px;
+    display: block;
+}
+.dropdown-3{
+    top: 80px;
+}
+.link-3:hover .dropdown-3{
+    opacity: 1;
+    min-height: 50px;
+    z-index: 20;
+}
+.link-3:hover .dropdown-3 .ours{
+    opacity: 1;
+    min-height: 50px;
+    display: block;
+}
+.dropdown-4{
+    top: 80px;
+}
+.link-4:hover .dropdown-4{
+    opacity: 1;
+    min-height: 50px;
+    z-index: 20;
+}
+.link-4:hover .dropdown-4 .ours{
+    opacity: 1;
+    min-height: 50px;
+    display: block;
+}
+.ours2{
+    padding-bottom: 80px;
+    font-size: 10px;
+
+}
+
 .hero-section{
     min-height: 50dvh;
     margin-top: 100px;
@@ -67,7 +173,7 @@ section .parent-div div{
     margin-top: 10px;
     color: #5E676F;
 }
-.hero-section .parent-div div button{
+.begin{
     padding: 17px 30px;
     border-radius: 12px;
     border: none;
@@ -75,6 +181,19 @@ section .parent-div div{
     color: white;
     font-weight: 500px;
     margin-top: 40px;
+    position: relative;
+}
+.fa-angle-right{
+    position: absolute;
+    top: 20px;
+    transform: translate(-40px);
+    transition: all 0.3s;
+    opacity: 0;
+
+}
+.begin:hover .fa-angle-right{
+    transform: translate(5px);
+    opacity: 1;
 }
 .start{
     width: 70%;
@@ -224,7 +343,7 @@ section .parent-div div{
     min-height: 40dvh;
     border: 1px solid green;
     margin-top: 100px;
-    background-image: url(https://edu.sqi.ng/wp-content/uploads/2020/08/DSC_9054-scaled.jpg);
+    background: linear-gradient( to right, #d076c466, #000442) ,url(https://edu.sqi.ng/wp-content/uploads/2020/08/DSC_9054-scaled.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -238,10 +357,12 @@ section .parent-div div{
 
     /* border: 1px solid red; */
 }
-.prog>div img{
+.prog>div .imag{
     width: 100%;
-    border-radius: 20px;
     margin-top: 20px;
+}
+iframe{
+    border-radius: 10px;
 }
 .text h1{
     color: white;
@@ -410,7 +531,7 @@ section .parent-div div{
 }
 .why-study{
     width: 72%;
-    height: 135dvh;
+    min-height: 135dvh;
     margin-top: 100px;
     margin: auto;
     /* border: 1px solid; */
@@ -488,7 +609,7 @@ section .parent-div div{
     border: none;
 }
 .FAQ{
-    height: 80dvh;
+    min-height: 80dvh;
     width: 100%;
     background-color: #090326;
     margin-top: 0px;
@@ -552,7 +673,7 @@ section .parent-div div{
 }
 .time{
     width: 100%;
-    height: 70dvh;
+    min-height: 70dvh;
     background-color: #000B3F;
 }
 .main-time{
@@ -627,7 +748,7 @@ section .parent-div div{
     /* border: 1px solid yellow; */
 }
 .contain1{
-    height: 570px;
+    min-height: 570px;
 }
 .imagee1{
     width: 100%;
@@ -670,7 +791,7 @@ section .parent-div div{
     margin-bottom: 20px;
 }
 .contain2{
-    height: 570px;
+    min-height: 570px;
 }
 .imagee3{
     width: 100%;
@@ -680,5 +801,381 @@ section .parent-div div{
     margin-bottom: 20px;
 }
 .contain3{
-    height: 550px;
+    min-height: 550px;
 }
+.main-list{
+    width: 72%;
+    min-height: 50dvh;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.list{
+    width: 200px;
+    min-height: 100px;
+    /* border: 1px solid red; */
+}
+.list1 h5{
+    color: #0A248A;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.we-prov{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.send{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.font-icons{
+    font-size: 15px;
+}
+.fa-facebook-f{
+    margin-right: 20px;
+}
+.fa-x-twitter{
+    margin-right: 20px;
+}
+.fa-linkedin-in{
+    margin-right: 20px;
+}
+.fa-youtube{
+    margin-right: 20px;
+}
+.fa-instagram{
+    margin-right: 20px;
+}
+.list1 a{
+    text-decoration: none;
+    display: inline-block;
+    color: #42abed;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.list2 h5{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.list2 p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list3 h5{
+    font-size: 15px;
+    margin-bottom: 25px;
+
+}
+.list3 p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list3 a{
+    text-decoration: none;
+    display: inline-block;
+    color: #42abed;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.list4 h5{
+    font-size: 15px;
+    margin-bottom: 25px;
+
+}
+.list4 p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list4 a{
+    text-decoration: none;
+    display: inline-block;
+    color: #42abed;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.list5 h5{
+    font-size: 15px;
+    margin-bottom: 25px;
+
+}
+.list5 p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list5 a{
+    text-decoration: none;
+    display: inline-block;
+    color: #42abed;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #050044;
+    height: 40px;
+}
+footer>div{
+    width: 72%;
+    height: 40px;
+    margin: 0px auto;
+}
+footer>div p{
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.icon{
+    display: none;
+}
+.say{
+    display: none;
+}
+.world{
+    display: none;
+}
+@media (max-width:768px) {
+    .whatsapp{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        top: 580px;
+        left: 15px;
+        z-index: 10;
+    }
+    .whatsapp img{
+        height: 60px;
+    }
+    .whatsapp p{
+        font-size: 10px;
+    }
+    .parag{
+        background-color: whitesmoke;
+        padding: 4px 4px;
+    }
+    .parag span{
+        font-weight: bold;
+        color: rgb(54, 54, 68);
+    }
+    nav{
+    width: 85%;
+    min-height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    }
+    .fa-angle-down{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .logo{
+        height: 40px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .icon{
+        display: block;
+        font-size: 25px;
+        color: rgb(152, 152, 246);
+    }
+    .main-list{
+        display: none;
+    }
+    .parent-div{
+        display: block;
+        width: 85%;
+        padding-top: 10px;
+    }
+    .become2{
+        display: none;
+    }
+    .industry{
+        display: none;
+    }
+    .img{
+        height: 95dvh;
+    }
+    .start{
+        width: 85%;
+        font-size: 30px;
+    }
+    .program{
+        width: 85%;
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+    .details{
+        width: 85%;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .top-courses{
+        width: 85%;
+        display: block;
+    }
+    .top-courses .container{
+        /* border: 1px solid; */
+        width: 100%;
+        min-height: 70dvh;
+    }
+    .our{
+        width: 40%;
+        margin: 10px 0px 0px 60px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 75%;
+        margin: 50px auto;
+        column-gap: 100px;
+    }
+
+    .grid div img{
+        width: 80%;
+    }
+    .inner-div{
+        display: block;
+    }
+    .text h1{
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    .test h1{
+        font-size:30px;
+        color: rgb(40, 30, 30);
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .test p{
+        margin-left: 15px;
+        font-weight: 300;
+    }
+    .say{
+        display: block;
+    }
+    .experience{
+        display: none;
+    }
+    .review{
+        width: 70%;
+    }
+    .first{
+        width: 50%;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .one{
+        width: 100%;
+    }
+    .two{
+        width: 100%;
+    }
+    .three{
+        width: 100%;
+    }
+    .four{
+        width: 100%;
+    }
+    .five{
+        width: 100%;
+    }
+
+    .why-study{
+        width: 85%;
+        display: block;
+    }
+    .features{
+        display: block;
+    }
+    .cardss{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .learning{
+        display: none;
+    }
+    .real{
+        display: none;
+    }
+    .world{
+        display: block;
+    }
+    .your{
+        display: none;
+    }
+    .main-FAQ{
+        width: 85%;
+        display: block;
+    }
+    .laptop{
+        height: 50dvh;
+    }
+    .time{
+        display: block;
+        padding-bottom: 70px;
+    }
+    .main-time{
+        width: 85%;
+        
+    }
+    .head-news{
+        display: block;
+    }
+    .main-news{
+        flex-wrap: wrap;
+    }
+    .contain{
+        width: 48%;
+    }
+    .news{
+        width: 85%;
+    }
+    .foots{
+        display: block;
+    }
+    .foot-sect{
+        display: block;
+    }
+    .main-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        margin-bottom: 30px;
+    }
+    .list{
+        margin-bottom: 30px;
+    }
+    footer{
+        height: 70px;
+    }
+    footer div{
+        width: 85%;
+    }
+
+}
+
